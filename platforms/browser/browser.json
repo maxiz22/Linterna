@@ -1,0 +1,46 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-flashlight": {
+            "PACKAGE_NAME": "ar.com.rockcodes.linterna"
+        },
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "ar.com.rockcodes.linterna"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-flashlight/www/Flashlight.js",
+            "id": "cordova-plugin-flashlight.Flashlight",
+            "pluginId": "cordova-plugin-flashlight",
+            "clobbers": [
+                "window.plugins.flashlight"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-battery-status/www/battery.js",
+            "id": "cordova-plugin-battery-status.battery",
+            "pluginId": "cordova-plugin-battery-status",
+            "clobbers": [
+                "navigator.battery"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-battery-status/src/browser/BatteryProxy.js",
+            "id": "cordova-plugin-battery-status.Battery",
+            "pluginId": "cordova-plugin-battery-status",
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-flashlight": "3.2.0",
+        "cordova-plugin-battery-status": "1.2.3"
+    }
+}
